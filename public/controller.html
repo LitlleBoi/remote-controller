@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Controller - Insect Battle Arena</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body class="controller-body">
+    
+    <div class="controller-container" id="controllerArea">
+        <h2 id="controllerTitle" class="controller-title">CONTROLLER</h2>
+        
+        <div class="controls-wrapper">
+            
+            <div class="dpad-horizontal">
+                <button class="control-btn square" id="btnLeft">◀</button>
+                <button class="control-btn square" id="btnRight">▶</button>
+            </div>
+            
+            <div class="action-buttons">
+                <button class="control-btn circle big yellow" id="btnShoot">🎯</button>
+            </div>
+            
+            <div class="dpad-vertical">
+                <button class="control-btn square" id="btnDown">▼</button>
+                <button class="control-btn square" id="btnUp">▲</button>
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <span>◀▶ Draai | ▲▼ Vooruit/Achteruit | 🎯 Schiet</span>
+        </div>
+    </div>
+
+    <script src="controller.js"></script>
+</body>
+</html>

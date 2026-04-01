@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arena - Insect Battle Arena</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body class="arena-body">
+    
+    <header class="arena-header">
+        <h1>🦗 Insect Battle Arena 🐜</h1>
+        <div class="score-board">
+            <span class="score p1">Sprinkhaan: <span id="score1">0</span></span>
+            <span class="score p2">Mier: <span id="score2">0</span></span>
+        </div>
+    </header>
+
+    <div class="split-screen-container">
+        
+        <!-- Player 1 View -->
+        <div class="player-view p1-view">
+            <div class="view-label">Player 1 - Sprinkhaan</div>
+            <div class="canvas-wrapper">
+                <canvas id="canvasP1" width="600" height="600"></canvas>
+            </div>
+            <div class="hp-label">HP: <span id="hpValue1">100%</span></div>
+        </div>
+        
+        <!-- Player 2 View -->
+        <div class="player-view p2-view">
+            <div class="view-label">Player 2 - Mier</div>
+            <div class="canvas-wrapper">
+                <canvas id="canvasP2" width="600" height="600"></canvas>
+            </div>
+            <div class="hp-label">HP: <span id="hpValue2">100%</span></div>
+        </div>
+
+    </div>
+
+    <script src="arena.js"></script>
+</body>
+</html>
